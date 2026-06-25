@@ -1,10 +1,13 @@
 <!-- Project Header -->
 <div align="center">
-	<img class="projectLogo" src="images/icon.svg" alt="Project logo" title="Project logo" width="256">
-	<br/>
-	<h1 class="projectName">
-		<a href="https://l.johng.io">Short End - URL Shortener</a>
-	</h1>
+	<a href="https://l.johng.io">
+		<img class="projectLogo" src="images/icon.svg" alt="Project logo" title="Project logo" width="256">
+		<br/>
+		<br/>
+		<h1 class="projectName">
+			Short End - URL Shortener
+		</h1>
+	</a>
 	<p class="projectBadges">
 		<a href="https://unmaintained.tech/">
 			<img src="https://unmaintained.tech/badge.svg" alt="No Maintenance Intended" title="No Maintenance Intended"/>
@@ -26,7 +29,6 @@
 	<br/>
 </div>
 
-
 > [!IMPORTANT]
 > I've marked this project as [UNMAINTAINED](https://unmaintained.tech/) because it hasn't seen an update in a while. You can still fork/download/use this project at your own risk, but I won't be able to provide support or updates.
 
@@ -34,18 +36,25 @@
 > This is currently an experimental project or proof-of-concept. It may contain bugs or incomplete features, and is not intended for production use. Breaking changes may be made at any time. Consider more stable alternatives for critical applications.
 
 ## 👋 About
+
 This is an experimental URL shortener using client-side redirects. If you want a simple link shortener for personal use but don't have your own server for setting up HTTP redirects, you may find this interesting.
 
-Obviously, it's not a good idea to use this for anything important. Client-side redirects are slower and less reliable than HTTP redirects because they require the page to load before redirecting. They can negatively impact SEO, as search engines may not follow them consistently, and may cause accessibility issues or a poor user experience—especially if users briefly see the original page.
+Obviously, it's not a good idea to use this for anything important. Client-side redirects are slower and less reliable than HTTP redirects because they require the page to load before redirecting. They can negatively impact SEO, as search engines may not follow them consistently, and may cause accessibility issues or a poor user experience (especially if users briefly see the original page).
 
+### Screenshots
+
+| ![Screenshot of the homepage](docs/screenshot.png) |
+| -------------------------------------------------- |
+| _Homepage_                                         |
 
 ## 📦 Installation
+
 This project is built with [Jekyll] and hosted on [GitHub Pages].
 
 If you don't already have Ruby installed, refer to the [Ruby documentation] for installation instructions. You can then install Jekyll and Bundler with `gem install bundler jekyll`.
 
-
 ## 🕹️ Usage
+
 ID to target URL mappings are defined using Markdown files in the `_links` directory. Each file represents a single link, where the filename is the ID of the link, and the target URL is defined using the `to` key in the YAML front matter.
 
 In the following example, the link `/github` will redirect to `https://github.com/twocaretcat`:
@@ -61,12 +70,11 @@ You can build the site using `bundle exec jekyll build` and serve it locally usi
 
 Refer to the [GitHub Pages with Jekyll] documentation for more information about hosting Jekyll sites on GitHub Pages.
 
-
 ## 🧾 License
+
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 The project logo is based on the `ruler-solid.svg` by [FontAwesome] and is licensed under [CC BY-SA 4.0].
-
 
 ## 💕 Funding
 
@@ -81,7 +89,6 @@ If you can't donate but still want to contribute, don't worry. There are many ot
 - ⭐ starring the project
 
 I appreciate the support!
-
 
 [FontAwesome]: https://fontawesome.com/
 [CC BY-SA 4.0]: https://creativecommons.org/licenses/by-sa/4.0/
